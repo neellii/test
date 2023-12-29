@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="open-btn" id="open-btn">Стать партнёром проекта</button>
+
+      <div class="modal-background">
+        <div class="modal">
+          <div class="modal__title-wrapper">
+            <h2 class="modal__title">Стать партнёром проекта</h2>
+          </div>
+
+          <form action="/">
+            <div class="upper">
+              <div class="upper__left">
+                <div class="input-wrapper">
+                  <label class="modal__label" for="org__name"
+                    ><span>✱</span>Название организации</label
+                  >
+                  <input
+                    class="modal__input"
+                    type="text"
+                    id="org__name"
+                    required
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label class="modal__label" for="tel"
+                    ><span>✱</span>Телефон</label
+                  >
+                  <input
+                    class="modal__input tel"
+                    type="tel"
+                    id="tel"
+                    required
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label class="modal__label" for="email"
+                    ><span>✱</span>E-mail</label
+                  >
+                  <input
+                    class="modal__input"
+                    type="email"
+                    id="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="upper__right">
+                <p for="img-input"><span>✱</span>Логотип (jpeg, png)</p>
+                <label for="img-input">
+                  <img src="" alt="Preview" id="img-preview" />
+                  <img
+                    class="delete-preview"
+                    src="./assets/img/delete-img.png"
+                    alt="delete"
+                  />
+                  <img
+                    class="logo-upload"
+                    src="./assets/img/input-img.png"
+                    alt="Выберите файл"
+                  />
+                  Выберите <br />
+                  файл
+                </label>
+                <input
+                  type="file"
+                  id="img-input"
+                  accept="image/png, image/jpeg"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="lower">
+              <div class="selection-wrapper">
+                <label class="modal__label" for="selection"
+                  ><span>✱</span>Направление</label
+                >
+                <select
+                  class="modal__input-labeled"
+                  name="selection"
+                  id="selection"
+                  required
+                >
+                  <option hidden selected></option>
+                  <option>Экология</option>
+                  <option>Торговля</option>
+                  <option>Финансы</option>
+                  <option>Консалтинг</option>
+                </select>
+              </div>
+
+              <div class="input-wrapper-wide">
+                <input class="modal__input-wide" type="url" id="site" />
+                <label for="site">
+                  <img src="./assets/img/input-img/site.png" alt="site" />
+                </label>
+              </div>
+
+              <div class="input-wrapper-wide">
+                <input class="modal__input-wide" type="url" id="vk" />
+                <label for="vk">
+                  <img src="./assets/img/input-img/vk.png" alt="vk" />
+                </label>
+              </div>
+
+              <div class="input-wrapper-wide">
+                <input class="modal__input-wide" type="url" id="ok" />
+                <label for="ok">
+                  <img
+                    src="./assets/img/input-img/odnoklassniki.png"
+                    alt="ok"
+                  />
+                </label>
+              </div>
+
+              <div class="input-wrapper-wide">
+                <input class="modal__input-wide" type="url" id="facebook" />
+                <label for="facebook">
+                  <img
+                    src="./assets/img/input-img/facebook.png"
+                    alt="facebook"
+                  />
+                </label>
+              </div>
+
+              <div class="input-wrapper-wide">
+                <input class="modal__input-wide" type="url" id="instagram" />
+                <label for="instagram">
+                  <img
+                    src="./assets/img/input-img/instagram.png"
+                    alt="instagram"
+                  />
+                </label>
+              </div>
+
+              <div class="input-wrapper-wide">
+                <input class="modal__input-wide" type="url" id="youtube" />
+                <label for="youtube">
+                  <img src="./assets/img/input-img/youtube.png" alt="youtube" />
+                </label>
+              </div>
+
+              <div class="input-wrapper">
+                <input class="modal__input-labeled" type="text " id="leader" />
+                <label class="modal__label" for="leader">Руководитель </label>
+              </div>
+
+              <div class="btns-wrapper">
+                <button class="submit-btn" type="submit">
+                  Стать партнёром проекта
+                </button>
+                <button class="cancel-btn">Отменить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
