@@ -48,11 +48,11 @@ loadPosts().then((data) => {
       if (order === "desc") {
         h.dataset.order = "asc";
         data = data.sort((a, b) => (a[column] > b[column] ? 1 : -1));
-        arrow.innerHTML = "&#129123";
+        arrow.innerHTML = "&#129121";
       } else {
         h.dataset.order = "desc";
         data = data.sort((a, b) => (a[column] < b[column] ? 1 : -1));
-        arrow.innerHTML = "&#129121";
+        arrow.innerHTML = "&#129123";
       }
 
       insertToTable(data);
